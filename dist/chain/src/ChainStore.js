@@ -215,7 +215,7 @@ var ChainStore = (function() {
                                     .db_api()
                                     .exec("set_subscribe_callback", [
                                         _this.onUpdate.bind(_this),
-                                        subscribe_to_new
+                                        false
                                     ])
                                     .then(function() {
                                         console.log(
