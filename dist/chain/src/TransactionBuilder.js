@@ -969,9 +969,6 @@ function _broadcast(was_broadcast_callback) {
     var _this5 = this;
 
     return new Promise(function(resolve, reject) {
-        if (!_this5.signed) {
-            _this5.sign();
-        }
         if (!_this5.tr_buffer) {
             throw new Error("not finalized");
         }
